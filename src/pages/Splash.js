@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import {ILLogo} from '../assets';
+import {colors} from '../utils';
 
 const Splash = ({navigation}) => {
   setTimeout(() => {
@@ -18,14 +19,14 @@ const Splash = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
     fontSize: 28,
-    color: '#000',
-    fontWeight: 'bold',
+    color: colors.inactive,
+    // fontWeight: 'bold',
     textAlign: 'center',
   },
 });

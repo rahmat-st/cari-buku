@@ -1,11 +1,12 @@
 import React from 'react';
+import {Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {
   IconAllBooks,
   IconWishlist,
   IconAllBooksActive,
   IconWishlistActive,
 } from '../assets';
-import {Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {colors} from '../utils';
 
 const TabItem = ({title, isFocused, options, onPress, onLongPress}) => {
   const label = title === 'Home' ? 'All Books' : title;
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   label: (isFocused) => ({
-    color: isFocused ? '#3BB8E0' : '#757575',
+    color: isFocused ? colors.primary : colors.inactive,
     marginTop: 4,
   }),
 });
