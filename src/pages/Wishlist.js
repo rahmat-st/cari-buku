@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const Home = () => {
+const Wishlist = () => {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Wishlist</Text>
     </View>
   );
 };
@@ -12,9 +12,9 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     padding: 24,
   },
 });
 
-export default Home;
+export default Wishlist;

@@ -4,7 +4,7 @@ import {ILLogo} from '../assets';
 
 const Splash = ({navigation}) => {
   setTimeout(() => {
-    navigation.replace('Home');
+    navigation.replace('MainApp');
   }, 3000);
 
   return (
